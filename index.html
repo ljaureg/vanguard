@@ -8,7 +8,7 @@
     <meta name="keywords" content="business growth, strategic investment, mergers, corporate consulting, digital transformation">
 <!-- ADD META TAG FOR AUTHOR AND YOUR NAME-->
     <meta name="author" content="Leilani Jauregui">
-    <title>Vaanguard | Leading the Future of Success</title>
+    <title>Vanguard | Leading the Future of Success</title>
 <!-- ADD LINK TO YOUR CSS-->
 
     <link rel="stylesheet" href="styles.css">
@@ -16,64 +16,95 @@
 
 <body>
 <!-- WRAP CONTENT IN VALIDATED, SEMANTIC HTML5 (SEE HINTS FOLDER LINKED TO IN THE CANVAS INSTRUCTIONS)-->
-    <h1>Vaanguard</h1>
-        <h2>Main Navigation</h2>
+    <div class="container">
+        <header>
+            <h1><span>Vanguard</span></h1>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle"><span></span></label>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    
+    <section id="innovation">
+        <div class="container">
+            <h2>Innovation & Investment</h2>
+            <p>We empower businesses to lead the future with high-impact strategies, market intelligence, and financial<br>
+            solutions that drive success.</p>
+            <p>
+                <a href="#request" class="button">Request a Consultation</a>
+            </p>
+        </div>
+    </section>
 
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <h2>Innovation & Investment</h2>
-        <p>We empower businesses to lead the future with high-impact strategies, market intelligence, and financial<br>
-        solutions that drive success.</p>
+    <section id="services">
+        <div class="container">
+            <h2>Our Expertise. Your Edge.</h2>
+            <p>We redefine success by leveraging AI-driven analytics, market intelligence, and high-yield investment strategies to propel businesses forward.<br>
+            Whether you're looking to scale, optimize, or dominate, our strategic expertise delivers results.'</p>
 
-        <p>
-            <a href="#request" class="button">Request a Consultation</a>
-        </p>
+            <h2>What We Offer</h2>
 
-        <h2>Our Expertise. Your Edge.</h2>
-        <p>We redefine success by leveraging AI-driven analytics, market intelligence, and high-yield investment strategies to propel businesses forward.<br>
-        Whether you're looking to scale, optimize, or dominate, our strategic expertise delivers results.'</p>
+            <div class="cards-grid">
 
-        <h2>What We Offer</h2>
-            <h3>Strategic Growth Consulting</h3>
-            <p>Unlock new revenue streams and optimize<br> market expansion strategies.</p>
+                <div class="card">
+                    <h3>Strategic Growth Consulting</h3>
+                    <p>Unlock new revenue streams and optimize<br> market expansion strategies.</p>
+                </div>
 
-            <h3>High-Impact Investment Solutions</h3>
-            <p>Maximize returns with data-driven portfolio<br> management.</p>
+                <div class="card">
+                    <h3>High-Impact Investment Solutions</h3>
+                    <p>Maximize returns with data-driven portfolio<br> management.</p>
+                </div>
 
-            <h3>Business Acceleration & Mergers</h3>
-            <p>Identify opportunities for rapid growth and<br> high-value acquisitions.</p>
+                <div class="card">
+                    <h3>Business Acceleration & Mergers</h3>
+                    <p>Identify opportunities for rapid growth and<br> high-value acquisitions.</p>
+                </div>
 
-            <h3>Digital Transformation</h3>
-            <p>Stay at the forefront of industry advancements with AI, blockchain, and<br> automation.</p>
+                <div class="card">
+                    <h3>Digital Transformation</h3>
+                    <p>Stay at the forefront of industry advancements with AI, blockchain, and<br> automation.</p>
+                </div>
 
-            <h3>Exclusive Executive Advisory Services</h3>
-            <p>Personalized insights and leadership<br> support for C-suite executives and high-<br> net-worth investors.</p>
+                <div class="card">
+                    <h3>Exclusive Executive Advisory Services</h3>
+                    <p>Personalized insights and leadership<br> support for C-suite executives and high-<br> net-worth investors.</p>
+                </div>
 
-            <h3>Corporate Innovation</h3>
-            <p>Strategic implementation of new ideas,<br> technologies, and processes to drive<br>
-            business growth, enhance competitive advantage, and adapt to evolving market demands.</p>
+                <div class="card">
+                    <h3>Corporate Innovation</h3>
+                    <p>Strategic implementation of new ideas,<br> technologies, and processes to drive<br>
+                    business growth, enhance competitive advantage, and adapt to evolving market demands.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <h2>Proven Results</h2>
-            <p>Our data-driven strategies have delivered outstanding ROI, leading to significant revenue growth.</p>
+    <section id="results">
+        <h2>Proven Results</h2>
+        <p>Our data-driven strategies have delivered outstanding ROI, leading to significant revenue growth.</p>
 
+        <div class="results-container">
+            <div class="results-table">
                 <h3>Profits</h3>
-                <table>
+                <table class="table">
                     <tr>
                         <th>Year</th>
                         <th>Revenue ($M)</th>
                         <th>Growth (%)</th>
                     </tr>
                     <tr>
-                        <td>0202</td>
+                        <td>2020</td>
                         <td>$120M</td>
                         <td>30%</td>
                     </tr>
-                    <tr>
+                    <tr class="charcoal">
                         <td>2021</td>
                         <td>$180M</td>
                         <td>50%</td>
@@ -83,7 +114,7 @@
                         <td>$250M</td>
                         <td>70%</td>
                     </tr>
-                    <tr>
+                    <tr class="charcoal">
                         <td>2023</td>
                         <td>$340M</td>
                         <td>85%</td>
@@ -94,40 +125,63 @@
                         <td>100%</td>   
                     </tr>
                 </table>
+            </div>
+
+            <div class="bar-chart">
                 <h3>Growth</h3>
 <!-- CODE PROVIDED FOR YOU, NOTHING TO DO FOR THE BAR CHART IN THE HTML-->
-                    <div  id="bar-chart">
-                        <div class="bar" data-year="2020" style="--height: 30%;"></div>
-                        <div class="bar" data-year="2021" style="--height: 50%;"></div>
-                        <div class="bar" data-year="2022" style="--height: 70%;"></div>
-                        <div class="bar" data-year="2023" style="--height: 85%;"></div>
-                        <div class="bar" data-year="2024" style="--height: 100%;"></div>
-                    </div>
-
-        <h2>Contact Us</h2>
-        <p>Want to take your business to the next level? Get in touch with our elite team today.</p>
-        
-        <div class="contact-form">
-            <label for="full-name">Full Name</label>
-            <input type="text" name="full-name" id="full-name" required>
-
-            <label for="email-address">Email Address</label>
-            <input type="text" name="email-address" id="email-address" required>
-
-            <label for="company-name">Company Name</label>
-            <input type="text" name="company-name" id="company-name" required>
-
-            <label for="industry">Industry</label>
-            <input type="text" name="industry" id="industry" required>
-
-            <label for="help">How can we help you?</label>
-            <textarea name="help" id="help" required></textarea>
-
-            <input type="submit" name="submit-button" id="submit-button" value="Submit">
+                <div  id="bar-chart">
+                    <div class="bar" data-year="2020" style="--height: 30%;"></div>
+                    <div class="bar" data-year="2021" style="--height: 50%;"></div>
+                    <div class="bar" data-year="2022" style="--height: 70%;"></div>
+                    <div class="bar" data-year="2023" style="--height: 85%;"></div>
+                    <div class="bar" data-year="2024" style="--height: 100%;"></div>
+                </div>
+            </div>
         </div>
+    </section>
 
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Want to take your business to the next level? Get in touch with our elite team today.</p>
+        
+            <div class="contact-form">
+                <div class="field">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" name="full-name" id="full-name" required>
+                </div>
+                
+                <div class="field">
+                    <label for="email-address">Email Address</label>
+                    <input type="text" name="email-address" id="email-address" required>
+                </div>
+
+                <div class="field">
+                    <label for="company-name">Company Name</label>
+                    <input type="text" name="company-name" id="company-name" required>
+                </div>
+
+                <div class="field">
+                    <label for="industry">Industry</label>
+                    <input type="text" name="industry" id="industry" required>
+                </div>
+
+                <div class="field">
+                    <label for="help">How can we help you?</label>
+                    <textarea name="help" id="help" required></textarea>
+                </div>
+
+                <div class="field">
+                    <input type="submit" name="submit-button" id="submit-button" value="Submit">
+                </div>
+            </div>
+        </div>
+    </section>
         <footer>
             <p>For educational purposes only.</p>
-            <p>Email: <a href="mailto:info@vaanguard.com">info@vaanguard.com</a></p>
-            <p>Phone: <a href="tel:4801234567">480.123.4567</a></p>
+            <p>Email: <a href="mailto:info@vanguard.com">info@vanguard.com</a></p>
+            <p>Phone: <a class="phone-link" href="tel:4801234567">480.123.4567</a></p>
         </footer>
+    </body>
+</html>
